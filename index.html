@@ -5,15 +5,29 @@
     <title>skullsequence</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background: #111;
-            color: #fff;
-            font-family: 'Inter', sans-serif;
-            overflow: hidden;
-        }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #ff5af7, #5af7ff, #5aff7a, #fff75a, #ff5a5f, #ff5af7);
+    background-size: 1200% 1200%;
+    animation: neonGradient 20s ease-in-out infinite;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+@keyframes neonGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
         #skull {
             font-size: 15vw;
@@ -56,42 +70,19 @@
                 .slick-slide img {
             display: block;
             margin: 0 auto;
-            width: 60vw;
-            max-width: 600px;
+            width: 60%;
+            max-width: 80%;
             height: auto;
             max-height: 90vh;
         }
-        .slick-dots, .slick-arrow {
-            display: none !important;
-        }
-        .slick-slider {
-            margin-top: 10vh;
-        }
+        
     </style>
 </head>
 <body>
-    <div class="carousel">
-        <div><img src="tacb.png" alt="album 1"></div>
-        <div><img src="tacb2.png" alt="album 2"></div>
-        <!-- Add more images as needed -->
-    </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $('.carousel').slick({
-            arrows: false,
-            dots: false,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            fade: true,
-            speed: 1000,
-            pauseOnHover: false,
-            pauseOnFocus: false,
-            infinite: true
-        });
-    });
-    </script>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <img src="tacb2.png" alt="album 1" style="max-width: 60%; height: auto; display: block; border-radius: 1%;">
+        </div>
+
     <div style="display: flex; justify-content: center; align-items: center;">
     <!--<img id="spotify-link" src="https://www.logo.wine/a/logo/Spotify/Spotify-Icon-Logo.wine.svg" style="width: 100px; height: auto; margin: 1rem;">
     <img id="apple-link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Apple_Music_icon.svg/2048px-Apple_Music_icon.svg.png" style="width: 50px; height: auto; margin: 1rem;">
