@@ -53,15 +53,52 @@
         a:hover {
             color: #fff;
         }
+                .slick-slide img {
+            display: block;
+            margin: 0 auto;
+            width: 60vw;
+            max-width: 600px;
+            height: auto;
+            max-height: 90vh;
+        }
+        .slick-dots, .slick-arrow {
+            display: none !important;
+        }
+        .slick-slider {
+            margin-top: 10vh;
+        }
     </style>
 </head>
 <body>
-    <br><br><br>
-    <div style="justify-content: center; display: flex; align-items: center;"><img id="album" src="tacb.png" style="width: 90%; height: auto; max-height: 90%;" alt="album"></div>
+    <div class="carousel">
+        <div><img src="tacb.png" alt="album 1"></div>
+        <div><img src="tacb2.png" alt="album 2"></div>
+        <!-- Add more images as needed -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            arrows: false,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            fade: true,
+            speed: 1000,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            infinite: true
+        });
+    });
+    </script>
     <div style="display: flex; justify-content: center; align-items: center;">
     <!--<img id="spotify-link" src="https://www.logo.wine/a/logo/Spotify/Spotify-Icon-Logo.wine.svg" style="width: 100px; height: auto; margin: 1rem;">
     <img id="apple-link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Apple_Music_icon.svg/2048px-Apple_Music_icon.svg.png" style="width: 50px; height: auto; margin: 1rem;">
         </div>
     Add more links as needed -->
+    </div>
 </body>
+<script>
+</script>
 </html>
