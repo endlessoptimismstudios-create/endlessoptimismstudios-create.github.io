@@ -1,3 +1,4 @@
+import { HeroIntro } from './components/HeroIntro'
 import { ImageMarquee } from './components/ImageMarquee'
 import { SocialLinks } from './components/SocialLinks'
 import { connectLinks, listenLinks } from './data/links'
@@ -8,18 +9,14 @@ export default function App() {
     <div style={styles.container}>
       <header style={styles.header}>
         <h1 style={styles.title}>trenton michael</h1>
+        <h2 style={{marginTop: 0, marginBottom: 0, fontWeight: 'normal' }}>the artist & the scientist</h2>
+        <h3 style={{marginTop: 0, marginBottom: 0, fontStyle: "italic", fontWeight: 'normal'  }}>based in chicago, il</h3>
       </header>
 
+      <HeroIntro />
+
       <section style={styles.section}>
-        <video
-          style={styles.video}
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="/EPK/montage_web_silent.mp4" type="video/mp4" />
-        </video>
+
 
         <div
           style={{
@@ -35,7 +32,7 @@ export default function App() {
         </div>
 
         <span>listen</span>
-        <SocialLinks links={listenLinks} linkClassName="" style={{ marginBottom: '10px' }} />
+        
 
         <span>connect</span>
         <SocialLinks links={connectLinks} />

@@ -92,6 +92,52 @@ h1 {
   background: #bafd72;
 }
 
+.hero-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 38%;
+  max-width: 220px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.hero-text p {
+  margin: 0 0 0.75em;
+}
+
+.hero-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .hero-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 2rem;
