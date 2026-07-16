@@ -3,7 +3,6 @@ import type { CSSProperties } from 'react'
 export const styles: Record<string, CSSProperties> = {
   container: {
     fontFamily: 'sans-serif',
-    backgroundColor: '#8B0000',
     margin: '0 auto',
     maxWidth: '700px',
     width: '100%',
@@ -14,17 +13,8 @@ export const styles: Record<string, CSSProperties> = {
     justifyContent: 'flex-start',
     overflowX: 'hidden',
   },
-  title: {
-    marginTop: '0px',
-    marginBottom: '0px',
-    width: '100%',
-    wordBreak: 'break-word',
-    fontSize: '2.8rem',
-    lineHeight: 1.1,
-    overflowWrap: 'break-word',
-  },
   header: {
-    textAlign: 'left',
+    textAlign: 'center',
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',

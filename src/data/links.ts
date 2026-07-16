@@ -31,11 +31,6 @@ export const listenLinks: SocialLink[] = [
     image: '/soundcloud.svg',
     className: 'invert-on-dark',
   },
-  {
-    name: 'YouTube',
-    url: 'https://www.youtube.com/@trenton_michael',
-    image: '/youtube_logo.webp',
-  },
 ]
 
 export const connectLinks: SocialLink[] = [
@@ -52,13 +47,29 @@ export const connectLinks: SocialLink[] = [
     image:
       'https://static.vecteezy.com/system/resources/thumbnails/031/737/223/small/tiktok-logo-tiktok-app-social-media-icons-free-png.png',
     style: { filter: 'invert(0)' },
+    
+    
+  },
+    {
+    name: 'YouTube',
+    url: 'https://www.youtube.com/@trenton_michael',
+    image: '/youtube_logo.webp',
   },
 ]
 
 export const carouselImages = [
-  'https://s3.amazonaws.com/gather.fandalism.com/800x800%2D2137856%2D%2D030C94BD%2DF16D%2D4919%2D8DFCCB505623164A%2D%2D0%2D%2D1619981%2D%2DIMG4610.jpg',
-  'https://s3.amazonaws.com/gather.fandalism.com/800x800%2D2137856%2D%2D6BE667B0%2DFE51%2D4016%2DBA8957616730ABAC%2D%2D1618613177348%2D%2D0F307CB7D8B8458998EAE4B5085ACE51.jpg',
+  'IMG_6529.jpg',
   'https://s3.amazonaws.com/gather.fandalism.com/800x800%2D2137856%2D%2D9D334B1A%2D45D9%2D4BB6%2DA5530B764382CCEE%2D%2D0%2D%2D1644032%2D%2DIMG0276.jpg',
+  'IMG_6521.jpg',
+  'IMG_6523.jpg',
+  'https://s3.amazonaws.com/gather.fandalism.com/800x800%2D2137856%2D%2D030C94BD%2DF16D%2D4919%2D8DFCCB505623164A%2D%2D0%2D%2D1619981%2D%2DIMG4610.jpg',
+  'IMG_6528.jpg',
+  'IMG_6520.jpg',  
   '/see-you-in-june-pink.webp',
+  'BLAXAX.jpg',
+  'CLOSEUP.jpg',
+  'https://s3.amazonaws.com/gather.fandalism.com/800x800%2D2137856%2D%2D6BE667B0%2DFE51%2D4016%2DBA8957616730ABAC%2D%2D1618613177348%2D%2D0F307CB7D8B8458998EAE4B5085ACE51.jpg',
+  '100_1163.jpg',
   'https://s3.amazonaws.com/gather.fandalism.com/800x800%2D2137856%2D%2D99D8B48E%2D1DE5%2D4F7A%2D882D1E1E6C2E6ACA%2D%2D0%2D%2D8779050%2D%2D18diamondsfake.jpg',
+    '100_1153.jpg',
 ]

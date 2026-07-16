@@ -1,0 +1,38 @@
+
+        <div>
+          <span>support my team & i</span>
+          <div style={{ marginLeft: '15px', marginTop: '10px' }}>
+            <a href="https://cash.app/$sunboyforever" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Square_Cash_app_logo.svg/960px-Square_Cash_app_logo.svg.png"
+                alt="Cash App"
+                style={{ width: '10%', borderRadius: 25, marginRight: 10 }}
+              />
+            </a>
+            <a href="https://venmo.com/u/sunboyforever" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://www.pngmart.com/files/23/Venmo-Logo-PNG-Pic.png"
+                alt="Venmo"
+                style={{ width: '10%', borderRadius: 25, marginRight: 10 }}
+              />
+            </a>
+            <a href="https://paypal.me/sunboyforever" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://www.svgrepo.com/show/475665/paypal-color.svg"
+                alt="PayPal"
+                style={{ width: '10%', borderRadius: 25, marginRight: 10 }}
+              />
+            </a>
+            <a
+              href="https://trentonmichael.bandcamp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/bandcamp-logo.svg"
+                alt="Bandcamp"
+                style={{ width: '10%', borderRadius: 25, marginRight: 10, filter: 'invert(1)' }}
+              />
+            </a>
+          </div>
+        </div>

@@ -1,7 +1,11 @@
 export const introText = [
-  '',
-  'i invent and play instruments that don\'t exist',
+  'i\'m a music artist, producer, & total lover of music',
+  'i invent and play instruments that don\'t exist, among many other things',
   'i also play some that exist already',
-  'book me via email or social media',
-  '',
+  ''
+]
+
+export const promoText = [
+  'BOOK ME:',
+   'via social media, or trentonmichaelmusic@proton.me',
 ]
