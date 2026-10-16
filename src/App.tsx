@@ -149,11 +149,11 @@ function CurrentPage() {
         </div>
       )
     case '/melodicgauntlet':
-      return <div className="simple-page" style={styles.container} ><a href="https://forms.gle/mAyXp19Yzgvhebxu7">Click here to sign up for the email list.</a><br></br>            <img
+      return <div className="simple-page" style={styles.container} ><img
               className="feature-image"
               src="/gauntlet_demo_2.png"
               alt="Trenton showing the Melodic Gauntlet"
-            /><br></br>More information about the Gauntlet will be shared soon.<GauntletIntro/></div>
+            /><GauntletIntro/><br></br>More information about the Gauntlet will be shared soon.<a href="https://forms.gle/mAyXp19Yzgvhebxu7">Click here to sign up for the email list.</a><br></br>            </div>
             
             // DOCUMENTATION ON MELODIC GAUNTLET^
     case '/contact':
