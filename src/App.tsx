@@ -1,4 +1,5 @@
 import { HeroIntro } from './components/HeroIntro'
+import { GauntletIntro } from './components/GauntletIntro'
 import { ImageMarquee } from './components/ImageMarquee'
 import { SocialLinks } from './components/SocialLinks'
 import { connectLinks, listenLinks } from './data/links'
@@ -152,7 +153,9 @@ function CurrentPage() {
               className="feature-image"
               src="/gauntlet_demo_2.png"
               alt="Trenton showing the Melodic Gauntlet"
-            /><br></br>More information about the Gauntlet will be shared soon.</div>
+            /><br></br>More information about the Gauntlet will be shared soon.<GauntletIntro/></div>
+            
+            // DOCUMENTATION ON MELODIC GAUNTLET^
     case '/contact':
       return (
         <div className="simple-page" style={styles.container}>

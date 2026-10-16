@@ -13,7 +13,7 @@ export default defineConfig({
           return
         }
 
-        for (const route of ['home', 'whoami', 'MelodicGauntlet', 'contact']) {
+        for (const route of ['home', 'whoami', 'melodicgauntlet', 'contact']) {
           this.emitFile({
             type: 'asset',
             fileName: `${route}/index.html`,
