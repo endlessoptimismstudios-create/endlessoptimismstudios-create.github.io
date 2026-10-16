@@ -97,7 +97,7 @@ function HomePage() {
                 src="/gauntlet_demo_2.png"
                 alt="Trenton showing the Melodic Gauntlet"
               />
-              <a className="feature-button" href="/MelodicGauntlet">
+              <a className="feature-button" href="/melodicgauntlet">
                 <span>Learn</span>
                 <span>more</span>
               </a>
