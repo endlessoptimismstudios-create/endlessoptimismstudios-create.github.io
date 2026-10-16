@@ -19,7 +19,7 @@ function HomePage() {
         <br />
         <img
           style={{ width: 'min(350px, 100%)', height: 'auto' }}
-          src="/trenton_michael_wearing_spiked_gauntlet_pixel_art.png"
+          src="/magnificent.png"
           alt="A photo of Trenton Michael wearing his signature synthesizer glove, the Melodic Gauntlet, in a pixel-art style, with his head resting on his chin. The back of his hand is painted with a star pattern."
         />
 
@@ -79,11 +79,11 @@ function HomePage() {
             </h4>
             <img
               className="feature-image"
-              src="/trenton_showing_gauntlet.png"
+              src="/gauntlet_demo_2.png"
               alt="Trenton showing the Melodic Gauntlet"
             />
             <a className="feature-button" href="/MelodicGauntlet">
-              Learn more about the <br /> Melodic Gauntlet
+              Learn more
             </a>
           </section>
         </div>
@@ -137,7 +137,7 @@ function CurrentPage() {
     case '/melodicgauntlet':
       return <div className="simple-page" style={styles.container} ><a href="https://forms.gle/mAyXp19Yzgvhebxu7">Click here to sign up for the email list.</a><br></br>            <img
               className="feature-image"
-              src="/trenton_showing_gauntlet.png"
+              src="/gauntlet_demo_2.png"
               alt="Trenton showing the Melodic Gauntlet"
             /><br></br>More information about the Gauntlet will be shared soon.</div>
     case '/contact':
