@@ -15,7 +15,7 @@ export function HeroIntro() {
         </div>
       </section>
 
-      <section className="hero-row">
+      <section className="hero-row">   
         <div className="hero-text">
           <p>
             i've been a saxophonist and composer since i was 11 years old and i took piano lessons
@@ -41,6 +41,11 @@ export function HeroIntro() {
             instructions. the Melodic Gauntlet, which i created only in summer of 2026, is a prime
             example of my skills as an engineer, inventor, and all-around creator.
           </p>
+               <img
+          className="hero-image"
+          src="/abstract_trenton.png"
+          alt="Trenton Michael wearing the Melodic Gauntlet."
+        />
         </div>
       </section>
     </div>

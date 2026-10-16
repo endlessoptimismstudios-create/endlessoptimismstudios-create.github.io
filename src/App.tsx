@@ -112,7 +112,7 @@ function HomePage() {
             width: '100%',
             maxWidth: '600px',
             height: 'auto',
-            marginBottom: 20,
+            marginBottom: 0,
             justifyContent: 'center',
             alignItems: 'center',
           }}
@@ -127,7 +127,6 @@ function HomePage() {
             margin: '24px 0',
           }}
         />
-        <p />
         <p style={{ fontStyle: 'italic' }}>© endless optimism llc</p>
       </section>
     </div>
@@ -157,7 +156,13 @@ function CurrentPage() {
     case '/contact':
       return (
         <div className="simple-page" style={styles.container}>
+          
           <a href="mailto:trentonmichaelmusic@gmail.com">trentonmichaelmusic@gmail.com</a>
+                        <br></br> <img
+          className="hero-image"
+          src="/arms.png"
+          alt="Trenton Michael wearing the Melodic Gauntlet."
+        />
         </div>
       )
     default:
