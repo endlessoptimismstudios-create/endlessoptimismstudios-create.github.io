@@ -29,6 +29,7 @@ export const styles: Record<string, CSSProperties> = {
     width: '100%',
     maxWidth: '600px',
     overflow: 'hidden',
+    marginBottom: 7
   },
   link: {
     padding: 8,

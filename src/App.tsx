@@ -5,46 +5,47 @@ import { connectLinks, listenLinks } from './data/links'
 import { styles } from './styles'
 
 const pages = [
-  { href: '/home', label: 'Home' },
-  { href: '/whoami', label: 'Who Am I?' },
+  { href: '/home', label: 'home' },
+  { href: '/whoami', label: 'who am i?' },
   { href: '/MelodicGauntlet', label: 'Melodic Gauntlet' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/contact', label: 'contact' },
 ]
 
 function HomePage() {
   return (
     <div style={styles.container}>
       <header style={styles.header}>
-        <h1 className="site-title">trenton michael</h1>
-        <br />
+        <h1 className="site-title" style={{ marginBottom: 4 }}>trenton michael</h1>
+
         <img
-          style={{ width: 'min(350px, 100%)', height: 'auto' }}
+          style={{ width: 'min(175px, 100%)', height: 'auto' }}
           src="/magnificent.png"
           alt="A photo of Trenton Michael wearing his signature synthesizer glove, the Melodic Gauntlet, in an all-blue-and-black pixel-art style. A star pattern is painted on the back of the hand as he holds the gauntlet upand looks off into the distance."
         />
 
-        <h2 style={{ marginTop: 0, marginBottom: 0, fontWeight: 'normal' }}>
+        <h2 style={{ marginTop: 0, marginBottom: 15, fontWeight: 'normal' }}>
           Architect of the Future
         </h2>
-        <br />
 
+          <ImageMarquee />        
         <div className="feature-grid">
+
           <section className="feature-card feature-card--neon">
             <h3
               className="feature-title feature-title--neon"
               style={{
                 marginTop: 0,
-                marginBottom: 0,
+                marginBottom: -10,
                 fontWeight: 'bold',
               }}
             >
-              NEON
+              Stream NEON
             </h3>
             <h4
               className="feature-subtitle"
               style={{
                 marginTop: 0,
-                marginBottom: 0,
+                marginBottom: -20,
                 fontStyle: 'italic',
                 fontWeight: 'normal',
               }}
@@ -77,19 +78,22 @@ function HomePage() {
               The one-of-a-kind gauntlet synthesizer with full chromatics, chords, expression, and
               unique abilities
             </h4>
-            <img
-              className="feature-image"
-              src="/gauntlet_demo_2.png"
-              alt="Trenton showing the Melodic Gauntlet"
-            />
-            <a className="feature-button" href="/MelodicGauntlet">
-              Learn more
-            </a>
+            <div className="gauntlet-promo-row">
+              <img
+                className="feature-image"
+                src="/gauntlet_demo_2.png"
+                alt="Trenton showing the Melodic Gauntlet"
+              />
+              <a className="feature-button" href="/MelodicGauntlet">
+                <span>Learn</span>
+                <span>more</span>
+              </a>
+            </div>
           </section>
         </div>
               <p>Find me online</p>
         <SocialLinks links={connectLinks} />
-                  <ImageMarquee /><br></br>
+                  <br></br>
       </header>
 
       <section style={styles.section}>
@@ -130,7 +134,7 @@ function CurrentPage() {
     case '/whoami':
       return (
         <div className="simple-page" style={styles.container}>
-          <h1>Who Am I?</h1>
+          <h1>who am i?</h1>
           <HeroIntro />
         </div>
       )
