@@ -7,9 +7,12 @@ import { styles } from './styles'
 const pages = [
   { href: '/home', label: 'home' },
   { href: '/whoami', label: 'who am i?' },
-  { href: '/MelodicGauntlet', label: 'Melodic Gauntlet' },
+  { href: '/melodicgauntlet', label: 'Melodic Gauntlet' },
   { href: '/contact', label: 'contact' },
 ]
+
+const leftSocialLinks = connectLinks.filter((_, index) => index % 2 === 0)
+const rightSocialLinks = connectLinks.filter((_, index) => index % 2 === 1)
 
 function HomePage() {
   return (
@@ -17,13 +20,23 @@ function HomePage() {
       <header style={styles.header}>
         <h1 className="site-title" style={{ marginBottom: 4 }}>trenton michael</h1>
 
-        <img
-          style={{ width: 'min(175px, 100%)', height: 'auto' }}
-          src="/magnificent.png"
-          alt="A photo of Trenton Michael wearing his signature synthesizer glove, the Melodic Gauntlet, in an all-blue-and-black pixel-art style. A star pattern is painted on the back of the hand as he holds the gauntlet upand looks off into the distance."
-        />
+        <div className="portrait-with-socials" role="group" aria-label="Portrait and social media">
+          <SocialLinks
+            links={leftSocialLinks}
+            className="hero-social-stack hero-social-stack--left"
+          />
+          <img
+            style={{ width: 'min(175px, 100%)', height: 'auto' }}
+            src="/magnificent.png"
+            alt="A photo of Trenton Michael wearing his signature synthesizer glove, the Melodic Gauntlet, in an all-blue-and-black pixel-art style. A star pattern is painted on the back of the hand as he holds the gauntlet up and looks off into the distance."
+          />
+          <SocialLinks
+            links={rightSocialLinks}
+            className="hero-social-stack hero-social-stack--right"
+          />
+        </div>
 
-        <h2 style={{ marginTop: 0, marginBottom: 15, fontWeight: 'normal' }}>
+        <h2 style={{ marginTop: 0, marginBottom: 0, fontStyle: "italic", fontWeight: 'normal' }}>
           Architect of the Future
         </h2>
 
@@ -91,9 +104,6 @@ function HomePage() {
             </div>
           </section>
         </div>
-              <p>Find me online</p>
-        <SocialLinks links={connectLinks} />
-                  <br></br>
       </header>
 
       <section style={styles.section}>
