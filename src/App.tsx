@@ -20,7 +20,7 @@ function HomePage() {
         <img
           style={{ width: 'min(350px, 100%)', height: 'auto' }}
           src="/magnificent.png"
-          alt="A photo of Trenton Michael wearing his signature synthesizer glove, the Melodic Gauntlet, in a pixel-art style, with his head resting on his chin. The back of his hand is painted with a star pattern."
+          alt="A photo of Trenton Michael wearing his signature synthesizer glove, the Melodic Gauntlet, in an all-blue-and-black pixel-art style. A star pattern is painted on the back of the hand as he holds the gauntlet upand looks off into the distance."
         />
 
         <h2 style={{ marginTop: 0, marginBottom: 0, fontWeight: 'normal' }}>
@@ -89,6 +89,7 @@ function HomePage() {
         </div>
               <p>Find me online</p>
         <SocialLinks links={connectLinks} />
+                  <ImageMarquee /><br></br>
       </header>
 
       <section style={styles.section}>
@@ -102,7 +103,6 @@ function HomePage() {
             alignItems: 'center',
           }}
         >
-          <ImageMarquee />
         </div>
 
         <hr
