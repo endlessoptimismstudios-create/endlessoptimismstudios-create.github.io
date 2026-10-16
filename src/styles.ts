@@ -2,11 +2,11 @@ import type { CSSProperties } from 'react'
 
 export const styles: Record<string, CSSProperties> = {
   container: {
-    fontFamily: 'sans-serif',
+    fontFamily: 'SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace',
     margin: '0 auto',
     maxWidth: '700px',
     width: '100%',
-    padding: 20,
+    padding: 'clamp(12px, 3vw, 20px)',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',

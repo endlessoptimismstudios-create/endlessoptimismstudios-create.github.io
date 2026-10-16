@@ -1,36 +1,48 @@
-import { introText, promoText } from '../data/content'
-import { styles } from '../styles.ts'
-import { connectLinks, listenLinks } from '../data/links'
-import { SocialLinks } from './SocialLinks.tsx'
-
 export function HeroIntro() {
   return (
-    <div className="hero-row">
-      <img
-        className="hero-image"
-        src="/frontmargin.jpeg"
-        alt="Trenton Michael"
-      />
-      <div>
-      <div className="hero-text">
-        {introText.map((line) => (
-          <p key={line}>{line}</p>
-        ))}      </div>   
-        <div className="hero-text-2">
-                {promoText.map((line) => (
-          <p key={line}>{line}</p>
-        ))}</div>
-      <video
-          style={styles.video}
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="/EPK/montage_web_silent.mp4" type="video/mp4" />
-          
-        </video>     
+    <div className="hero-intro">
+      <section className="hero-row hero-row--split">
+        <img
+          className="hero-image"
+          src="/trenton_michael_wearing_spiked_gauntlet_pixel_art.png"
+          alt="Trenton Michael wearing the Melodic Gauntlet."
+        />
+        <div className="hero-text">
+        <p>
+          my name is trenton michael. i'm 27 years old, i live in chicago and i'm from rural
+          michigan.
+        </p>
         </div>
+      </section>
+
+      <section className="hero-row">
+        <div className="hero-text">
+          <p>
+            i've been a saxophonist and composer since i was 11 years old and i took piano lessons
+            for a few months at age 13, the same age i became highly interested in synthesizers. i
+            spent the rest of my teen years playing many different genres, learning production,
+            recording, and experimenting with electronic music composition and production. finally,
+            i started releasing music and performing as a solo artist when i was 21.
+          </p>
+        </div>
+      </section>
+
+      <section className="hero-video-row" aria-label="Performance video">
+        <video className="hero-video" autoPlay muted loop playsInline>
+          <source src="/EPK/montage_web_silent.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section className="hero-row">
+        <div className="hero-text">
+          <p>
+            i consider myself a scientist. i think the word "scientist" should describe someone who
+            actually explores the unknown, not just someone who memorizes facts and follows
+            instructions. the Melodic Gauntlet, which i created only in summer of 2026, is a prime
+            example of my skills as an engineer, inventor, and all-around creator.
+          </p>
+        </div>
+      </section>
     </div>
   )
 }
